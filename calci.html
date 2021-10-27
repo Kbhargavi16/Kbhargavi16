@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: rgb(219, 221, 215);
+        }
+        body
+        {
+            background-color: rgb(133, 133, 133);
+        }
+    </style>
+</head>
+
+<body>
+    <div style="border: 2px solid black; margin: 50px 400px ; box-shadow:10px 10px 10px 10px rgb(83, 85, 83);" >
+    <div style="text-align: center;">
+        <h2>Calculator</h2>
+        <div style=" margin-top: 10px;">
+            <div>
+                Enter a:<input id="txt1" type="text">
+            </div>
+            <br>
+            <div>
+                Enter b:<input id="txt2" type="text">
+            </div>
+            <br>
+            <div>
+
+                <button class="btn btn-outline-primary" onclick="addition()">addition</button>
+
+
+                <button class="btn btn-outline-dark" onclick="substraction()">substraction</button>
+
+
+                <button  class="btn btn-outline-info"onclick="multiplication()">multiplication</button>
+
+
+                <button class="btn btn-outline-success" onclick="division()">division</button>
+            </div>
+        </div>
+        <br>
+
+        <p style="text-align: center;" id="result">result</p>
+    </div>
+    </div>
+</div>
+    <script>
+        function addition() {
+            var a = parseInt(document.getElementById("txt1").value)
+            var b = parseInt(document.getElementById("txt2").value)
+            var sum;
+            sum = a + b;
+
+            document.getElementById("result").innerHTML = "sum of a&b:" + sum;
+        }
+        function substraction() {
+            var a = parseInt(document.getElementById("txt1").value)
+            var b = parseInt(document.getElementById("txt2").value)
+            var sub;
+            sub = a - b;
+
+            document.getElementById("result").innerHTML = "sub of a&b:" + sub;
+        }
+        function multiplication() {
+            var a = parseInt(document.getElementById("txt1").value)
+            var b = parseInt(document.getElementById("txt2").value)
+            var mul;
+            mul = a * b;
+
+            document.getElementById("result").innerHTML = " mulof a&b:" + mul;
+        }
+        function division() {
+            var a = parseInt(document.getElementById("txt1").value)
+            var b = parseInt(document.getElementById("txt2").value)
+            var division;
+            division = a / b;
+
+            document.getElementById("result").innerHTML = "divivsion of a&b:" + division;
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
