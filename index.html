@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+    <title>Document</title>
+    <style>
+        .star{
+            color: red;
+        }
+        
+        .abc
+        {
+            text-align: center;
+        }
+        .first1
+        {
+            margin-left: 150px;
+        }
+        .first2
+        {
+            margin-left: 100px;
+        }
+        .first3
+        {
+            margin-left: 100px;
+        }
+        .first4
+        {
+            margin-left: 120px;
+        }
+        .first5
+        {
+            margin-left: 140px;
+        }
+        .first6
+        {
+            margin-left: 105px;
+        }
+        .first7
+        {
+            margin-left: 60px;
+        }
+        .first8
+        {
+            margin-left: 70px;
+        }
+        .first9
+        {
+            margin-left: 110px;
+        }
+        .first10
+        {
+            margin-left: 72px;
+        }
+        .first11
+        {
+            margin-left: 115px;
+        }
+        table,th,td{
+            border:1px solid black;
+            border-collapse: collapse;
+            background-color: aquamarine;
+        }
+        th{
+            background-color: rgb(248, 78, 55);
+        }
+
+        
+        
+        
+        
+
+    </style>
+</head>
+<body style="background-color: rgb(169, 218, 218);">
+    <!-- <img src="https://th.bing.com/th/id/R.4f8ee9771b79d178804cde92f55366b3?rik=7FYvU%2bEyMH93ng&riu=http%3a%2f%2fwww.kamalsandesh.org%2fwp-content%2fuploads%2f2017%2f01%2fswami-vivekananda-3.jpg&ehk=e9vdFV5BxqZsTgesXy1kYu%2f8g3aFUtADMW%2bdzZBVFO4%3d&risl=&pid=ImgRaw&r=0"> -->
+    <h1 class="abc">SV-GIE Institute</h1>
+    <div >
+        <!-- <h3 style="text-align: center;"> Student Registration form</h3> -->
+       
+        <fieldset style="max-width: 400px; margin:0px auto 0px auto ;background-color: rgb(181, 247, 225);">
+            <legend> Registration form</legend>
+        
+        <form action="#" onsubmit="details();return false;" >
+            ID:<input type="text" id="a" class="first1" required>
+            <span class="star">*</span><br><br>
+            First Name:<input type="text" id="b" class="first2" required>
+            <span class="star">*</span><br><br>
+            Last Name:<input type="text" id="c" class="first3" required>
+            <span class="star">*</span><br><br>
+            Gender:<input type="radio"  class="first4"  name="gender">female<input type="radio" class="first4"  name="gender" > male
+            <span class="star">*</span><br><br>
+            Age:<input type="number" id="f"  class="first5" name="age" min="18" max="50">
+            <span class="star">*</span><br>
+            <br>
+            Education:<select class="first6" id="g" >
+                <option></option>
+                <option value="B.tech">B.tech</option>
+                <option value="M.tech">M.tech</option>
+                <option value="MBA">MBA</option>
+                <option value="Degree">Degree</option>
+                <option value="MCA">MCA</option>
+
+            </select>
+            
+            <span class="star">*</span><br><br>
+            Yearof Passedout:<select class="first7"  id="h">
+                <option></option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+
+            </select>
+            <span class="star">*</span><br>
+            <br>
+            Preffered batch:<input type="radio"  class="first8"name="Prefferedbatch"  >morning
+            <input type="radio" class="first6"  name="Prefferedbatch" >evening
+            <span class="star">*</span><br><br>
+            Location:<select class="first9" id="k" >
+                <option></option>
+                <option value="Mahabubnagar">Mahabubnagar</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Andhra pradhesh">Andhra pradhesh</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="out of the country">out of the country</option>
+                </select>
+                <span class="star">*</span><br><br>
+                Phone Number:<input type="text" id="l" class="first10"  required>
+                <span class="star">*</span><br><br>
+                Email id:<input type="text" id="m" class="first11" required>
+                <span class="star">*</span><br><br>
+            <input type="submit" value="submit"   name="submit" id="mouse"  ></input>
+            <input type="reset" value="reset"  name="clear"/>
+            
+            
+        </form>
+        </fieldset>
+    </div>
+    <div style="visibility:collapse" id="a1"> 
+        <h3> Details</h3>
+        <table id="table">
+            <tr class="a2">
+              <th>Id</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Gender</th>
+              <th>Age</th>
+              <th>Education</th>
+              <th>Year of passedout</th>
+              <th>Prefferd batch</th>
+              <th>location</th>
+              <th>phone number</th>
+              <th>emailid</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            
+            </tr>
+            
+          </table>
+    </div>
+    <script src="index.js"></script>
+   
+    
+</body>
+</html>
